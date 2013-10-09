@@ -13,7 +13,7 @@ module Rubinius
     def self.load
       return if loaded?
 
-      Tooling.load File.expand_path("../coverage", __FILE__)
+      Rubinius::Tooling.load File.expand_path('../coverage/coverage', __FILE__)
       loaded true
 
       self
